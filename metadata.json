@@ -1,0 +1,14 @@
+{
+  "name": "WEBRONIC 360 Virtual Tour",
+  "slug": "webronic-virtual-tour",
+  "version": "1.1.0",
+  "download_url": "https://updates.webronic.com/virtual-tour/webronic-virtual-tour-1.1.0.zip",
+  "requires": "6.0",
+  "tested": "6.6",
+  "requires_php": "7.4",
+  "last_updated": "2025-10-24 10:00:00",
+  "sections": {
+    "description": "Create and manage 360-degree virtual tours.",
+    "changelog": "### 1.1.0\n- New: X\n- Fix: Y\n- Perf: Z"
+  }
+}
