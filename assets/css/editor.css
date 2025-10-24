@@ -1,0 +1,1473 @@
+.webronic-virtual-tour-editor .tour-editor-container {
+    display: flex;
+    margin-top: 20px;
+    height: 600px; /* Fixed height for both containers */
+}
+
+.editor-preview {
+    flex: 2;
+    position: relative;
+    width: 100%;
+    height: 100%; /* Take full height of parent */
+}
+
+.editor-controls {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    min-width: 350px;
+    height: 95%; /* Take full height of parent */
+    overflow-y: auto; /* Add scroll if content overflows */
+}
+
+/* FIX 2: Background color for no-scenes state */
+.tour-editor-container.no-scenes .editor-controls {
+    background: #E5E5E5 !important;
+}
+
+#pannellum-container {
+    width: 100%;
+    height: 100%; /* Take full height of parent */
+    background: #f1f1f1;
+    position: relative;
+}
+
+.editor-tabs {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    padding: 10px 15px;
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    font-weight: 600;
+    color: #555;
+}
+
+.tab-button.active {
+    border-bottom-color: #2271b1;
+    color: #2271b1;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.shortcode-input {
+    width: 100%;
+    max-width: 400px;
+    background: #f1f1f1;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+/* =========================================== */
+/* ENHANCED TABLE STYLES WITH ALTERNATING ROWS */
+/* =========================================== */
+
+.scenes-table, .hotspots-table {
+    margin-top: 15px;
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    font-size: 14px;
+}
+
+.scenes-table th, .hotspots-table th {
+    text-align: left;
+    padding: 12px 15px;
+    background: #f8f9fa;
+    font-weight: 600;
+    color: #2c3e50;
+    border-bottom: 2px solid #e9ecef;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.scenes-table td, .hotspots-table td {
+    padding: 12px 15px;
+    vertical-align: middle;
+    border-bottom: 1px solid #f1f3f4;
+    transition: background-color 0.2s ease;
+}
+
+/* Alternating row colors */
+.scenes-table tbody tr:nth-child(even),
+.hotspots-table tbody tr:nth-child(even) {
+    background-color: #fafbfc;
+}
+
+.scenes-table tbody tr:nth-child(odd),
+.hotspots-table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Hover effect */
+.scenes-table tbody tr:hover,
+.hotspots-table tbody tr:hover {
+    background-color: #f0f7ff;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(72, 136, 232, 0.15);
+}
+
+/* Current scene highlight */
+.scene-title-link.current-scene {
+    color: #4888e8;
+    font-weight: 700;
+    position: relative;
+}
+
+.scene-title-link.current-scene::after {
+    content: "•";
+    color: #4888e8;
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.status-default {
+    color: #4a6fdc;
+    font-weight: 600;
+}
+
+.status-normal {
+    color: #666;
+}
+
+.hotspot-type {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: 500;
+}
+
+.hotspot-type.scene {
+    background-color: #e6ecff;
+    color: #4a6fdc;
+    border: 1px solid #d1e0ff;
+}
+
+.hotspot-type.info {
+    background-color: #f0f6fc;
+    color: #1d2327;
+    border: 1px solid #e1e8f0;
+}
+
+.actions a {
+    text-decoration: none;
+}
+
+.tab-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.position-values {
+    padding: 6px 10px;
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    font-size: 0.85em;
+    font-family: monospace;
+    color: #495057;
+}
+
+.current-scene-indicator {
+    background: #f5f5f5;
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+    border-left: 4px solid #4888e8;
+}
+
+.current-scene-indicator span {
+    font-weight: 600;
+    color: #4888e8;
+}
+
+.no-scenes, .no-hotspots {
+    text-align: center;
+    padding: 40px 20px;
+    color: #6c757d;
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.no-scenes svg, .no-hotspots svg {
+    margin-bottom: 15px;
+    opacity: 0.5;
+}
+
+.no-scenes p, .no-hotspots p {
+    margin: 8px 0;
+    font-size: 15px;
+}
+
+/* Enhanced action buttons */
+.action-buttons {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.action-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    background: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* .action-button:not(.delete-button):hover {
+    background: #4888e8;
+    border-color: #4888e8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(72, 136, 232, 0.3);
+}
+
+.action-button:not(.delete-button):hover .action-icon {
+    filter: brightness(0) invert(1);
+} */
+
+.delete-button {
+    background: #ffffff;
+    border-color: #f1f3f4;
+}
+
+/* .delete-button:hover {
+    background: #dc3545;
+    border-color: #dc3545;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(220, 53, 69, 0.3);
+}
+
+.delete-button:hover .action-icon {
+    filter: brightness(0) invert(1);
+} */
+
+.action-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+/* Status icons */
+.status-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.2s ease;
+}
+
+.status-icon:hover {
+    transform: scale(1.1);
+}
+
+/* No Scenes Empty State */
+.no-scenes-empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    padding: 60px 20px;
+    background: #E5E5E5; /* Changed to #E5E5E5 as requested */
+    border-radius: 12px;
+    border: 2px dashed #dee2e6;
+}
+
+.no-scenes-empty-state .no-scenes-icon {
+    margin-bottom: 20px;
+}
+
+.no-scenes-empty-state h3 {
+    font-weight: 600;
+    color: #6c757d;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.no-scenes-empty-state p {
+    font-size: 15px;
+    color: #868e96;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+/* Modal styles */
+.webronic-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 4px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.close-modal {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #666;
+}
+
+.close-modal:hover {
+    color: #000;
+}
+
+.form-actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+/* Direction options */
+.direction-options {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.direction-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.direction-option img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.direction-option input[type="radio"] {
+    display: none;
+}
+
+.direction-option input[type="radio"]:checked + img {
+    border-color: #2271b1;
+    box-shadow: 0 0 0 2px #2271b1;
+}
+
+
+.scene-hotspot {
+    background-image: url('../hotspots/up.png');
+}
+
+.scene-hotspot.up {
+    background-image: url('../hotspots/up.png');
+}
+
+.scene-hotspot.right {
+    background-image: url('../hotspots/right.png');
+}
+
+.scene-hotspot.left {
+    background-image: url('../hotspots/left.png');
+}
+
+.info-hotspot {
+    background-image: url('../hotspots/info.png');
+}
+
+.custom-hotspot:hover {
+    transform: scale(1.2);
+}
+
+
+/* Hotspot Tooltip Styles */
+.hotspot-tooltip {
+    position: absolute;
+    color: white; /* Keep white text */
+    padding: 2px 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 100;
+    opacity: 1;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: none; /* No background */
+    border-radius: 0;
+    min-width: auto;
+    text-align: center;
+    text-shadow: 0 0 3px rgba(0,0,0,0.8), 
+                 0 0 5px rgba(0,0,0,0.6); /* Stronger shadow for white text */
+    font-weight: bold;
+    filter: drop-shadow(0 0 2px black); /* Additional shadow effect */
+}
+
+/* For scene hotspots - "Toward [scene name]" */
+.custom-hotspot.scene-hotspot + .hotspot-tooltip {
+    color: #fff;
+    text-shadow: 0 0 4px #000,
+                 0 0 6px #000,
+                 0 0 8px #000;
+}
+
+/* For info hotspots */
+.custom-hotspot.info-hotspot + .hotspot-tooltip {
+    color: #fff;
+    text-shadow: 0 0 4px #000,
+                 0 0 6px #000;
+}
+
+/* Updated Hotspot Styles */
+.custom-hotspot {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent !important;
+    box-shadow: none;
+    transition: all 0.3s ease;
+    display: fixed;
+    align-items: center;
+    justify-content: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 15px;
+}
+
+/* Rest of the CSS remains the same */
+/* Right-click instructions */
+
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .tour-editor-container {
+        flex-direction: column;
+        height: auto; /* Reset height on mobile */
+    }
+    
+    .editor-preview, .editor-controls {
+        flex: none;
+        width: 100%;
+        height: 500px; /* Fixed height on mobile */
+    }
+    
+    #pannellum-container {
+        height: 100%;
+    }
+}
+
+@media (max-width: 782px) {
+    .editor-tabs {
+        flex-wrap: wrap;
+    }
+    
+    .tab-button {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+    
+    .tab-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .scenes-table, .hotspots-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+    .scenes-table th, 
+    .scenes-table td,
+    .hotspots-table th,
+    .hotspots-table td {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+    
+    .direction-options {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .no-scenes-empty-state {
+        padding: 20px 15px;
+    }
+    
+    .no-scenes-empty-state h3 {
+        font-size: 18px;
+    }
+    
+    .no-scenes-empty-state p {
+        font-size: 14px;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .action-button {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+/* New style for the top message */
+.hotspot-instructions {
+    position: absolute;
+    top: 10px; /* Position the message at the top */
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff; /* White background */
+    color: #000; /* Black text color */
+    font-weight: bold; /* Make the text bold */
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 10;
+    pointer-events: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    white-space: nowrap; /* Prevent the text from wrapping */
+    max-width: 90%; /* Adjust the width if needed */
+}
+
+/* Candy icon style */
+.hotspot-instructions svg {
+    width: 16px;
+    height: 16px;
+    fill: #FF6347; /* Candy color */
+}
+
+
+/* Custom CSS for Back Button with Image and Tour Name Separately */
+.back-to-tour-list {
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: transparent; /* No background box */
+}
+
+.back-to-tour-list .back-arrow-img {
+    width: 20px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 8px; /* Space between the image and the tour name */
+}
+
+.back-to-tour-list .tour-name {
+    font-weight: bold; /* Tour name styling */
+    font-size: 16px;
+    color: #333; /* Adjust text color */
+}
+
+.back-to-tour-list:hover .tour-name {
+    color: #0073aa; /* Change tour name color on hover */
+}
+
+
+.back-to-tours a {
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    background: none;
+    padding: 0;
+    box-shadow: none;
+}
+
+.back-to-tours a:hover {
+    opacity: 0.7;
+}
+
+.back-to-tours a:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+/* ===== Overlay ===== */
+.webronic-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: auto;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  color: #111;
+}
+.webronic-modal[style*="display:block"] { display: block; }
+
+/* ===== Card ===== */
+.webronic-modal .modal-content {
+  background: #f7f8fa; /* changed from white */
+  margin: 60px auto;
+  padding: 24px 28px;
+  border-radius: 16px;
+  width: 60%;
+  max-width: 820px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+/* ===== Header ===== */
+.webronic-modal .modal-header {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 2px; border-bottom: none;
+}
+.webronic-modal .modal-header h3 { margin: 0; font-size: 22px; font-weight: 800; }
+
+/* ===== Header Buttons ===== */
+.webronic-modal .header-actions { display: flex; gap: 10px; }
+.webronic-modal .button {
+  appearance: none; border: none !important; border-radius: 10px;
+  padding: 10px 22px !important; font-size: 15px; font-weight: 700 !important;
+  cursor: pointer; transition: all 0.15s ease; color: #fff !important;
+}
+.webronic-modal .button.button-primary { background-color: #3b82f6 !important; }
+.webronic-modal .button.cancel-modal { background-color: #dc3b31 !important; }
+
+/* ===== Fields ===== */
+.webronic-modal .form-group,
+.webronic-modal .form-group-row {
+  background: #ffffff; /* changed from grey */
+  border: 1px solid #eef0f2;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 18px;
+}
+.webronic-modal .form-group-row { display: flex; gap: 20px; }
+.webronic-modal .form-group label {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.webronic-modal input[type="text"],
+.webronic-modal select {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background: #f7f8fa; /* swapped (was white) */
+  padding: 14px 16px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #111;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+}
+.webronic-modal input::placeholder { color: #9aa3ab; font-weight: 500; }
+
+/* keep default chevron for selects */
+.webronic-modal select {
+  appearance: none;
+  background: #f7f8fa url("data:image/svg+xml,%3Csvg fill='%239aa3ab' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'%3E<path d='M7 10l5 5 5-5z'/></svg>") no-repeat right 14px center;
+  background-size: 12px;
+}
+
+/* ===== Direction Buttons ===== */
+.direction-options {
+  display: flex; gap: 16px; justify-content: flex-start; flex-wrap: wrap;
+}
+.direction-option {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  background: #f7f8fa; /* was white */
+  border: 2px solid transparent; border-radius: 16px;
+  padding: 16px 22px; cursor: pointer; transition: all 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  min-width: 120px; min-height: 120px;
+}
+.direction-option:hover { border-color: #3b82f6; background: #ffffff; /* swapped */ }
+
+.direction-option img {
+  width: 56px; height: 56px; margin-bottom: 10px; display: block;
+}
+.direction-option input[type="radio"] { display: none; }
+.direction-option input[type="radio"]:checked + img { filter: brightness(1.2); }
+
+.direction-option span {
+  font-weight: 700; font-size: 15px; line-height: 1; text-align: center;
+}
+
+/* ===== Select with Drop Icon ===== */
+.form-group--with-icon .select-with-icon { position: relative; }
+.select-with-icon select { padding-right: 44px; }
+.select-with-icon .dropdown-icon-btn {
+  position: absolute; right: 8px; top: 50%; transform: translateY(-50%);
+  width: 28px; height: 28px; border: none; border-radius: 6px;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: #f2f4f7; cursor: pointer; padding: 0;
+}
+.select-with-icon .dropdown-icon-btn img { max-width: 18px; max-height: 18px; display: block; }
+
+/* Custom dropdown list */
+.scene-dropdown {
+  position: absolute; right: 0; left: 0; top: calc(100% + 6px);
+  background: #f7f8fa; /* changed */
+  border: 1px solid #e5e7eb; border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+  list-style: none; margin: 0; padding: 8px 0; max-height: 260px; overflow: auto;
+  display: none; z-index: 10;
+}
+.scene-dropdown.open { display: block; }
+.scene-dropdown li {
+  padding: 10px 14px; cursor: pointer; font-weight: 600; font-size: 14px;
+}
+.scene-dropdown li:hover { background: #ffffff; /* swapped */ }
+
+/* ===== Responsive ===== */
+@media (max-width: 960px) {
+  .webronic-modal .modal-content { width: 90%; padding: 18px; }
+  .webronic-modal .form-group-row { flex-direction: column; }
+  .direction-option { min-width: 110px; min-height: 110px; }
+  .direction-option img { width: 50px; height: 50px; }
+}
+
+
+/* Basic styles for the container */
+.editor-tabs {
+    display: flex;
+    justify-content: center;  /* Centers the buttons horizontally */
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 300px;  /* Adjust width as needed */
+    margin: 0 auto; /* Centers the container itself horizontally */
+}
+
+/* Button styles */
+.tab-button {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    color: #333;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+/* Active button styles */
+.tab-button.active {
+    background-color: #4a90e2;
+    color: white;
+}
+
+/* Hover effect for buttons */
+
+/* Active button click effect */
+.tab-button:active {
+    background-color: #2e73b7;
+}
+
+/* Alternative larger buttons */
+.action-button {
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+}
+
+.action-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.action-button.with-text {
+    width: auto;
+    padding: 6px 12px;
+    gap: 6px;
+}
+
+.action-button.with-text span {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+    /* Button hover effects */
+    .copy-shortcode:hover, 
+    .button-small:hover {
+        opacity: 0.8;
+        transform: scale(1.05);
+        transition: all 0.2s ease;
+    }
+
+    /* Cancel button hover effect */
+    .cancel-modal:hover {
+        opacity: 0.7;
+        transform: scale(1.1);
+        transition: all 0.2s ease;
+    }
+
+    /* Ensure buttons have proper cursor */
+    .copy-shortcode, 
+    .button-small, 
+    .cancel-modal {
+        cursor: pointer;
+        border: 1px solid #ccc;
+        background: #f7f7f7;
+    }
+
+    .copy-shortcode:hover, 
+    .button-small:hover {
+        background: #e5e5e5;
+        border-color: #999;
+    }
+
+    /* Custom controls styling */
+    .webronic-custom-controls {
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        padding: 0 20px;
+        z-index: 1000;
+        pointer-events: none;
+    }
+
+    .webronic-scene-title {
+        background: white;
+        color: #333;
+        padding: 10px 20px;
+        border-radius: 25px;
+        font-size: 14px;
+        font-weight: 600;
+        pointer-events: none;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        min-width: 150px;
+        text-align: center;
+    }
+
+    .webronic-nav-buttons {
+        display: flex;
+        gap: 10px;
+        pointer-events: auto;
+    }
+
+    .webronic-nav-button {
+        background: rgba(0, 0, 0, 0.7);
+        border: none;
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        padding: 0;
+    }
+
+    .webronic-nav-button:hover {
+        background: rgba(0, 0, 0, 0.9);
+        transform: scale(1.1);
+    }
+
+    .webronic-nav-button img {
+        width: 25px;
+        height: 25px;
+        object-fit: contain;
+    }
+
+    .webronic-nav-button:disabled {
+        opacity: 0.3;
+        cursor: not-allowed;
+        transform: none;
+    }
+
+    .webronic-nav-button:disabled:hover {
+        background: rgba(0, 0, 0, 0.7);
+        transform: none;
+    }
+
+    .hotspot-instructions {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: white;
+        color: rgba(0, 0, 0, 0.8);
+        padding: 10px 16px;
+        border-radius: 20px;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        z-index: 1000;
+        pointer-events: none;
+    }
+
+    .hotspot-instructions svg {
+        width: 16px;
+        height: 16px;
+        flex-shrink: 0;
+    }
+
+    /* Action Buttons Styling */
+    .action-buttons {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+    }
+
+    .action-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+        height: 35px;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        border: 1px solid transparent;
+    }
+
+    .action-button:not(.delete-button) {
+        background: #f0f7ff;
+        border-color: #d1e9ff;
+    }
+
+    .action-button:not(.delete-button):hover {
+        background: #e1f0ff;
+        border-color: #b8daff;
+        transform: translateY(-1px);
+    }
+
+    .delete-button {
+        background: #fef2f2;
+        border-color: #fecaca;
+    }
+
+    .delete-button:hover {
+        background: #fee2e2;
+        border-color: #fca5a5;
+        transform: translateY(-1px);
+    }
+
+    .action-icon {
+        width: 25px;
+        height: 25px;
+        object-fit: contain;
+    }
+
+    /* Status Icon Styling */
+    .status-icon {
+        width: 25px;
+        height: 25px;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* For tables */
+    .wp-list-table .actions {
+        text-align: center;
+    }
+
+    .wp-list-table .action-buttons {
+        justify-content: center;
+    }
+
+    /* Select with icon styling */
+    .select-with-icon {
+        position: relative;
+    }
+
+    .select-with-icon select {
+        padding-right: 44px;
+        width: 100%;
+    }
+
+    .select-with-icon .dropdown-icon-btn {
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 28px;
+        height: 28px;
+        border: none;
+        border-radius: 6px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: #f2f4f7;
+        cursor: pointer;
+        padding: 0;
+    }
+
+    .select-with-icon .dropdown-icon-btn img {
+        max-width: 18px;
+        max-height: 18px;
+        display: block;
+    }
+
+    /* FIX 3: Info Hotspot Card Styles - FIXED NO TRANSPARENCY */
+    .info-hotspot-card {
+        position: absolute;
+        background: #ffffff !important; /* Solid white background */
+        border-radius: 8px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        padding: 15px;
+        min-width: 200px;
+        max-width: 280px;
+        border: 1px solid #e0e0e0;
+        font-family: Arial, sans-serif;
+        z-index: 10000;
+        left: 100%;
+        top: 0;
+        margin-left: 15px;
+        transform: none;
+        display: none;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .info-hotspot-card::before {
+        content: '';
+        position: absolute;
+        left: -8px;
+        top: 20px;
+        width: 0;
+        height: 0;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-right: 8px solid #ffffff; /* Solid white arrow */
+        z-index: 10001;
+    }
+
+    .hotspot-card-image {
+        width: 100%;
+        height: 120px;
+        margin-bottom: 12px;
+        border-radius: 6px;
+        overflow: hidden;
+        background: #f5f5f5;
+    }
+
+    .hotspot-card-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .hotspot-card-title {
+        font-weight: 700;
+        color: #333;
+        font-size: 16px;
+        margin-bottom: 8px;
+        text-align: left;
+        word-wrap: break-word;
+        line-height: 1.3;
+    }
+
+    .hotspot-card-info {
+        color: #666;
+        font-size: 14px;
+        line-height: 1.4;
+        text-align: left;
+        word-wrap: break-word;
+        max-height: 100px;
+        overflow-y: auto;
+    }
+
+    /* Navigation Hotspot Tooltip - PLAIN TEXT ONLY */
+    .hotspot-tooltip {
+        position: absolute;
+        color: white;
+        font-size: 12px;
+        white-space: nowrap;
+        z-index: 100;
+        font-family: Arial, sans-serif;
+        background: none !important;
+        border-radius: 0 !important;
+        padding: 2px 5px;
+        margin-bottom: 10px;
+    }
+
+    /* Remove any arrow from navigation tooltip */
+    .hotspot-tooltip::after {
+        display: none !important;
+    }
+
+    /* Ensure hotspots are properly positioned */
+    .custom-hotspot.info-hotspot {
+        cursor: pointer;
+    }
+
+    .custom-hotspot.scene-hotspot {
+        cursor: pointer;
+    }
+
+    /* Custom controls styling */
+    .webronic-custom-controls {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        background: transparent;
+        padding: 10px 20px;
+        border-radius: 25px;
+        z-index: 1000;
+        backdrop-filter: none;
+        border: none;
+    }
+
+    .webronic-scene-title {
+        color: #000000 !important;
+        font-weight: bold;
+        font-size: 16px;
+        min-width: 150px;
+        text-align: center;
+        padding: 8px 15px;
+        text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .webronic-prev-button,
+    .webronic-next-button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 50%;
+        transition: background 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    .webronic-prev-button:disabled,
+    .webronic-next-button:disabled {
+        opacity: 0.3;
+        cursor: not-allowed;
+        pointer-events: none;
+    }
+
+    /* Ensure the container has proper positioning */
+    #pannellum-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Settings copy button styling */
+    #copy-shortcode {
+        background: #4888e8 !important;
+        color: white !important;
+        border: none !important;
+        border-radius: 6px !important;
+        cursor: pointer !important;
+        padding: 10px 15px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        transition: background 0.3s ease !important;
+        font-weight: 600 !important;
+    }
+
+    #copy-shortcode:hover {
+        background: #135e96 !important;
+        transform: scale(1.05) !important;
+    }
+
+    #tour-shortcode {
+        background: #f7f8fa !important;
+        border: 1px solid #ddd !important;
+        border-radius: 6px !important;
+        padding: 10px !important;
+        font-family: monospace !important;
+        font-size: 14px !important;
+    }
+
+    /* Default two-pane layout */
+    .tour-editor-container {
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 20px;
+      align-items: start;
+      height: 600px; /* Fixed height */
+    }
+
+    .editor-preview {
+      min-height: 100%;
+      position: relative;
+      height: 100%;
+    }
+
+    .editor-controls {
+      background: #E5E5E5; /* Changed to #E5E5E5 as requested */
+      border: 1px solid #E5E5E5;
+      border-radius: 10px;
+      padding: 16px;
+      height: 95%;
+      overflow-y: auto;
+    }
+
+    /* No-scenes: make controls full width & centered */
+    .tour-editor-container.no-scenes {
+      display: block;
+      height: auto;
+    }
+
+    .tour-editor-container.no-scenes .editor-controls {
+      background: #E5E5E5; /* Changed to #E5E5E5 as requested */
+      padding: 32px 24px;
+      text-align: center;
+      height: auto;
+    }
+
+    .tour-editor-container.no-scenes .editor-tabs,
+    .tour-editor-container.no-scenes .tab-content {
+      display: none !important; /* hide tabs entirely */
+    }
+
+    .tour-editor-container.no-scenes .no-scenes-empty {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Mobile fallback */
+    @media (max-width: 1024px) {
+      .tour-editor-container {
+        grid-template-columns: 1fr;
+        height: auto;
+      }
+      .editor-controls {
+        margin-top: 16px;
+        height: 500px;
+      }
+    }
+
+
+    /* No-scenes: make controls full width & centered with increased height */
+    .tour-editor-container.no-scenes {
+      display: block;
+      height: auto;
+      min-height: 600px; /* Increased minimum height */
+    }
+
+    .tour-editor-container.no-scenes .editor-controls {
+      background: #E5E5E5; /* Card background color - Changed to #E5E5E5 as requested */
+      border: 1px solid #E5E5E5;
+      border-radius: 10px;
+      padding: 60px 24px; /* Increased vertical padding */
+      text-align: center;
+      height: auto;
+      min-height: 500px; /* Increased minimum height */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Updated No Scenes Empty State with increased spacing */
+    .no-scenes-empty-state {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+        padding: 60px 20px; /* Increased padding */
+        background-color: #E5E5E5; /* Card background color - Changed to #E5E5E5 as requested */
+        border-radius: 12px;
+        min-height: 400px; /* Increased minimum height */
+    }
+
+    .no-scenes-empty-state .no-scenes-icon {
+        margin-bottom:-10px; /* Increased space between image and text */
+        width: 80px;
+        height: 50px;
+        background-image: url('../img/info2.png'); /* Your info2.png image */
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .no-scenes-empty-state h3 {
+        font-weight: 600;
+        color: #8A898E;
+        margin-bottom: 30px; /* Increased space between text and button */
+        line-height: 1.4;
+    }
+
+    .no-scenes-empty-state p {
+        font-size: 16px;
+        color: #666;
+        margin-bottom: 40px; /* Increased space between text and button */
+        line-height: 1.5;
+    }
+
+    /* Hide the SVG that was there before */
+    .no-scenes-icon svg {
+        display: none;
+    }
+
+    /* Style for the add first scene button with more spacing */
+    #add-first-scene {
+        background-color: #4888E8;
+        color: white;
+        padding: 12px 32px; /* Increased padding */
+        border: none;
+        border-radius: 50px;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        cursor: pointer;
+        margin: 30px auto 0; /* Added top margin for more space above button */
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+
+    #add-first-scene:hover {
+        background-color: #3a7bd5;
+        transform: translateY(-2px);
+    }
+
+
+    .webronic-modal .modal-content { max-width: 640px; }
+    .webronic-modal .form-group { width: 96%; }
+    .webronic-modal .inline-fields {
+        display: flex;
+        gap: 12px;
+        align-items: flex-end;
+    }
+    .webronic-modal .inline-fields .half {
+        flex: 1 1 0;
+        min-width: 0;
+    }
+    .webronic-modal .custom-select {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px 40px 10px 12px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        background: #fff !important;
+        -webkit-appearance: none; -moz-appearance: none; appearance: none;
+        font-size: 14px; line-height: 1.3; color: #222;
+    }
+    .webronic-modal .select-wrap { position: relative; }
+
+    .webronic-modal .custom-select::-ms-expand { display: none; }
+    .webronic-modal .custom-select:required:invalid { color: #888; }
+    .webronic-modal .custom-select:focus {
+        outline: none; border-color: #2271b1;
+        box-shadow: 0 0 0 2px rgba(34,113,177,.15);
+    }
+    @media (max-width: 640px) {
+        .webronic-modal .inline-fields { display: block; }
+        .webronic-modal .inline-fields .half { width: 100%; }
+    }
+    .webronic-modal .select-wrap {
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+    .webronic-modal .custom-select,
+    .webronic-modal select.custom-select,
+    .webronic-modal .form-group .regular-text {
+        display: block;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box;
+        padding-right: 44px;
+    }
+    .webronic-modal .select-wrap::after {
+        content: "";
+        position: absolute;
+        right: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 18px;
+        height: 18px;
+        background-image: url('../img/drop.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        pointer-events: none;
+        z-index: 1;
+    }
+
+    /* Hide Pannellum's right-click "About" / version box */
+.pnlm-about-msg,
+.pnlm-about,
+.pnlm-ui .pnlm-about-msg {
+  display: none !important;
+}

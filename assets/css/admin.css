@@ -1,0 +1,537 @@
+/* =========================
+   Header: Title + Add Button
+   ========================= */
+.webronic-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  margin:20px 0 16px; /* Increased top margin to move content down */
+}
+
+/* Main Title - Smaller size */
+.webronic-main-title{
+  color:#000 !important;
+  font-weight:700 !important;
+  font-size:22px !important; /* Reduced from 28px to 22px */
+  margin:0 !important;
+  line-height:1.2;
+}
+
+/* Add button (matches + Add New Scene style) */
+.webronic-add-btn{
+  background:#4888E8;
+  color:#fff;
+  padding:8px 20px;
+  border:none;
+  border-radius:50px;
+  font-size:14px;
+  font-weight:700;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  cursor:pointer;
+  box-shadow:0 1px 0 rgba(0,0,0,.06);
+}
+.webronic-add-btn:hover{
+  filter:brightness(.97);
+  transform:translateY(-0.5px);
+}
+
+/* =========================
+   Table Container for Scroll
+   ========================= */
+.webronic-table-container {
+    border-radius: 12px;
+    margin-top: 20px; /* Increased margin to move table down */
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #E1E5EA;
+    background: #FFFFFF;
+}
+
+/* =========================
+   Scrollable Table
+   ========================= */
+.webronic-tours-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    table-layout: fixed;
+    margin: 0;
+}
+
+/* Table header fixed */
+.webronic-tours-table thead {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Table body scrollable */
+.webronic-tours-table tbody {
+    display: block;
+    max-height: 400px; /* Adjust this height as needed */
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* Ensure header and body cells align */
+.webronic-tours-table thead tr,
+.webronic-tours-table tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+/* =========================
+   Table Alignment Fix
+   ========================= */
+
+/* Ensure table header and body cells have consistent padding */
+.webronic-tours-table thead th {
+  padding: 10px 12px !important;
+  vertical-align: middle;
+  border-bottom: 1px solid #134888;
+  font-weight: 700;
+  color: #2c3338;
+  background: #FFFFFF !important;
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Body cells typography + spacing */
+.webronic-tours-table tbody td{
+  font-weight:700 !important;
+  vertical-align:middle;
+  padding:14px 12px !important;
+  color:#2c3338;
+  border-top:0 !important;
+  border-bottom:0 !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 13px;
+}
+
+/* Alternating row colors */
+.webronic-tours-table tbody tr.odd-row {
+  background-color: #F4F4F4 !important;
+}
+
+.webronic-tours-table tbody tr.even-row {
+  background-color: #FFFFFF !important;
+}
+
+/* Specific column text alignment to match headers */
+.column-id { 
+  width:60px; 
+  min-width: 60px;
+  text-align:center; 
+}
+
+.column-title { 
+  width:180px; 
+  min-width: 180px;
+  text-align:left;
+}
+
+.column-shortcode { 
+  width:280px; 
+  min-width: 280px;
+  text-align:left;
+}
+
+.column-scenes, 
+.column-hotspots { 
+  width:80px; 
+  min-width: 80px;
+  text-align:center; 
+}
+
+.column-date { 
+  width:140px; 
+  min-width: 140px;
+  text-align:center; 
+}
+
+.column-actions { 
+  width:100px; 
+  min-width: 100px;
+  text-align:center; 
+  white-space:nowrap; 
+}
+
+/* Ensure header cells have the same text alignment */
+.webronic-tours-table thead th.column-id,
+.webronic-tours-table thead th.column-scenes,
+.webronic-tours-table thead th.column-hotspots,
+.webronic-tours-table thead th.column-date,
+.webronic-tours-table thead th.column-actions {
+  text-align:center;
+}
+
+.webronic-tours-table thead th.column-title,
+.webronic-tours-table thead th.column-shortcode {
+  text-align:left;
+}
+
+/* =========================
+   Table → Card-style rows with consistent rounded corners
+   ========================= */
+
+/* Header rounded corners */
+.webronic-tours-table thead tr:first-child th:first-child {
+  border-top-left-radius: 12px;
+}
+
+.webronic-tours-table thead tr:first-child th:last-child {
+  border-top-right-radius: 12px;
+}
+
+/* Body rounded corners for last row */
+.webronic-tours-table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 12px;
+}
+
+.webronic-tours-table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 12px;
+}
+
+/* Individual row rounded corners */
+.webronic-tours-table tbody td:first-child{
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.webronic-tours-table tbody td:last-child{
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* Small blue id color (#1, #2) */
+.column-id strong{ color:#4888E8; }
+
+/* =========================
+   Shortcode UI
+   ========================= */
+.shortcode-container{
+  align-items: center;
+  width: 100%;
+}
+
+.shortcode-input{
+  flex: 1;
+  background:#F7F8FA;
+  border:1px solid #E1E5EA;
+  padding:6px 10px;
+  border-radius:8px;
+  font-weight:700;
+  color:#2c3338;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  min-width: 0;
+}
+
+.copy-btn{
+  background:#fff;
+  border:1px solid #E1E5EA;
+  padding:5px 6px;
+  border-radius:8px;
+  cursor:pointer;
+  transition:all .15s ease;
+  flex-shrink: 0;
+}
+.copy-btn:hover{ 
+  box-shadow:0 0 0 2px #4888E8 inset; 
+}
+.copy-btn.copied {
+  background: #4888E8;
+  border-color: #4888E8;
+}
+.copy-icon{ 
+  width:16px; 
+  height:16px; 
+  object-fit:contain; 
+  opacity:.85; 
+}
+
+/* =========================
+   Action icons
+   ========================= */
+.action-icon.img-icon{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:32px;
+  height:32px;
+  margin:0 4px;
+  text-decoration:none;
+  padding:0;
+  border-radius:999px;
+  transition:transform .12s ease, background-color .12s ease;
+  flex-shrink: 0;
+}
+.action-icon.img-icon:hover{ transform:translateY(-1px); }
+
+.edit-img{ background:#E8F1FF; border:1px solid #CFE0FF; }
+.delete-img{ background:#FFE8E8; border:1px solid #FFC9C9; }
+
+.action-icon-img{
+  width:18px;
+  height:18px;
+  object-fit:contain;
+  opacity:.95;
+}
+
+.action-icon-img--red {
+  filter: hue-rotate(0deg) saturate(2);
+}
+
+/* =========================
+   Row actions (Edit | Delete text links)
+   ========================= */
+.row-actions{ 
+  visibility:hidden; 
+  margin-top:6px; 
+  font-weight:600; 
+  font-size: 11px;
+}
+tr:hover .row-actions{ visibility:visible; }
+
+.row-actions a {
+  color: #4888E8;
+  text-decoration: none;
+}
+
+.row-actions a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   Modal styles
+   ========================= */
+.virtual-tour-modal{
+  display:none;
+  position:fixed;
+  z-index:9999;
+  left:0; top:0;
+  width:100%; height:100%;
+  background-color:rgba(0,0,0,0.62);
+  overflow:auto;
+}
+
+.virtual-tour-modal-content{
+  background-color:#ffffff;
+  margin:80px auto;
+  padding:0;
+  border:1px solid #E6E8EB;
+  width:35%; max-width:500px;
+  border-radius:16px;
+  box-shadow:0 20px 45px rgba(0,0,0,0.28);
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;
+  color:#111;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.vtt-card{ 
+  padding:28px 24px 30px; 
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.vtt-modal-head{
+  display:flex; align-items:center; justify-content:space-between;
+  gap:14px; margin-bottom:20px;
+  flex-shrink: 0;
+}
+.vtt-modal-head h2{
+  margin:0; font-size:24px; line-height:1.2; font-weight:800; color:#111;
+}
+.vtt-actions{ display:flex; gap:14px; flex-shrink: 0; }
+.vtt-btn{
+  appearance:none; border:0; outline:none;
+  padding:14px 28px; border-radius:12px;
+  font-weight:700; font-size:15px; cursor:pointer;
+  box-shadow:0 2px 0 rgba(0,0,0,0.08);
+  flex-shrink: 0;
+}
+.vtt-btn--cancel{ background:#dc3b31; color:#fff; }
+.vtt-btn--save, .vtt-btn--add{ background:#3b82f6; color:#fff; }
+.vtt-btn:hover{ filter:brightness(0.95); }
+
+.vtt-modal-body {
+  flex: 1;
+  overflow-y: auto;
+  max-height: 300px;
+}
+
+.vtt-field{
+  background:#F7F8FA; border:1px solid #EEF0F2;
+  border-radius:12px; padding:16px 16px 18px;
+}
+.vtt-field label{
+  display:block; margin:0 0 10px 2px;
+  font-size:15px; font-weight:700; color:#333;
+}
+.vtt-field input[type="text"]{
+  width:100%; display:block; background:#F1F3F5; border:0; outline:none;
+  border-radius:10px; padding:14px 16px; font-size:15px; font-weight:700; color:#111;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.6);
+  transition: box-shadow .15s ease, background .15s ease;
+}
+.vtt-field input[type="text"]::placeholder{ color:#9aa3ab; font-weight:600; }
+.vtt-field input[type="text"]:focus{
+  box-shadow:0 0 0 3px rgba(59,130,246,0.25), inset 0 1px 0 rgba(255,255,255,0.6);
+  background:#fff;
+}
+.close-modal{ cursor:pointer; }
+
+/* =========================
+   WordPress Table Overrides
+   ========================= */
+.wp-list-table.widefat {
+  border: none;
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: none;
+  margin: 0;
+  table-layout: fixed;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.wp-list-table.widefat thead th,
+.wp-list-table.widefat thead td {
+  border-bottom: 1px solid #E1E5EA;
+}
+
+/* Remove default WordPress alternating colors since we have custom ones */
+.wp-list-table.widefat tbody tr:nth-child(odd),
+.wp-list-table.widefat tbody tr:nth-child(even) {
+  background-color: transparent;
+}
+
+/* Responsive table */
+@media screen and (max-width: 1200px) {
+  .webronic-tours-table thead th {
+    font-size: 12px;
+    padding: 8px 10px !important;
+  }
+  
+  .webronic-tours-table tbody td {
+    font-size: 12px;
+    padding: 12px 10px !important;
+  }
+  
+  .column-shortcode {
+    width: 240px;
+    min-width: 240px;
+  }
+  
+  .column-title {
+    width: 150px;
+    min-width: 150px;
+  }
+}
+
+@media screen and (max-width: 782px) {
+  .webronic-table-container {
+    overflow-x: auto;
+  }
+  
+  .webronic-tours-table {
+    min-width: 800px;
+  }
+}
+
+/* Success notification */
+.webronic-notice {
+  position: fixed;
+  top: 50px;
+  right: 20px;
+  background: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  z-index: 10000;
+  font-weight: 600;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* =========================
+   Copy Success Message
+   ========================= */
+.copy-success-message {
+    color: #4CAF50;
+    font-size: 11px;
+    font-weight: 600;
+    margin-top: 4px;
+    text-align: center;
+    animation: fadeIn 0.3s ease;
+    padding: 2px 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Update shortcode container for message */
+.shortcode-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.shortcode-input-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 8px;
+}
+
+.shortcode-input {
+    flex: 1;
+    background: #F7F8FA;
+    border: 1px solid #E1E5EA;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-weight: 700;
+    color: #00611d;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    min-width: 0;
+}

@@ -1,0 +1,887 @@
+.webronic-virtual-tour-editor .tour-editor-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.editor-preview {
+    flex: 2;
+    position: relative;
+    width: 100%;
+}
+
+.editor-controls {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    min-width: 350px;
+}
+
+#pannellum-container {
+    width: 100%;
+    height: 300px;
+    background: #f1f1f1;
+    position: relative;
+}
+
+.editor-tabs {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    padding: 10px 15px;
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    font-weight: 600;
+    color: #555;
+}
+
+.tab-button.active {
+    border-bottom-color: #2271b1;
+    color: #2271b1;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.shortcode-input {
+    width: 100%;
+    max-width: 400px;
+    background: #f1f1f1;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.scenes-table, .hotspots-table {
+    margin-top: 15px;
+    width: 100%;
+}
+
+.scenes-table th, .hotspots-table th {
+    text-align: left;
+    padding: 8px 10px;
+}
+
+.scenes-table td, .hotspots-table td {
+    padding: 8px 10px;
+    vertical-align: middle;
+}
+
+.status-default {
+    color: #4a6fdc;
+    font-weight: 600;
+}
+
+.status-normal {
+    color: #666;
+}
+
+.hotspot-type {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 0.85em;
+}
+
+.hotspot-type.scene {
+    background-color: #e6ecff;
+    color: #4a6fdc;
+}
+
+.hotspot-type.info {
+    background-color: #f0f6fc;
+    color: #1d2327;
+}
+
+.actions a {
+    text-decoration: none;
+}
+
+.tab-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.position-values {
+    padding: 5px;
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+.current-scene-indicator {
+    background: #f5f5f5;
+    padding: 8px;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+}
+
+.current-scene-indicator span {
+    font-weight: 600;
+}
+
+.no-scenes, .no-hotspots {
+    text-align: center;
+    padding: 20px;
+    color: #999;
+}
+
+.no-scenes svg, .no-hotspots svg {
+    margin-bottom: 10px;
+}
+
+.no-scenes p, .no-hotspots p {
+    margin: 5px 0;
+}
+
+/* Modal styles */
+.webronic-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 4px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.close-modal {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #666;
+}
+
+.close-modal:hover {
+    color: #000;
+}
+
+.form-actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+/* Direction options */
+.direction-options {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.direction-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.direction-option img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.direction-option input[type="radio"] {
+    display: none;
+}
+
+.direction-option input[type="radio"]:checked + img {
+    border-color: #2271b1;
+    box-shadow: 0 0 0 2px #2271b1;
+}
+
+.scene-hotspot {
+    background-image: url('../hotspots/up.png');
+}
+
+.scene-hotspot.up {
+    background-image: url('../hotspots/up.png');
+}
+
+.scene-hotspot.right {
+    background-image: url('../hotspots/right.png');
+}
+
+.scene-hotspot.left {
+    background-image: url('../hotspots/left.png');
+}
+
+.info-hotspot {
+    background-image: url('../hotspots/info.png');
+}
+
+.custom-hotspot:hover {
+    transform: scale(1.2);
+}
+
+/* Hotspot Tooltip Styles */
+.hotspot-tooltip {
+    position: absolute;
+    color: white;
+    padding: 2px 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 100;
+    opacity: 1;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: none;
+    border-radius: 0;
+    min-width: auto;
+    text-align: center;
+    text-shadow: 0 0 3px rgba(0,0,0,0.8), 
+                 0 0 5px rgba(0,0,0,0.6);
+    font-weight: bold;
+    filter: drop-shadow(0 0 2px black);
+}
+
+/* For scene hotspots - "Toward [scene name]" */
+.custom-hotspot.scene-hotspot + .hotspot-tooltip {
+    color: #fff;
+    text-shadow: 0 0 4px #000,
+                 0 0 6px #000,
+                 0 0 8px #000;
+}
+
+/* For info hotspots */
+.custom-hotspot.info-hotspot + .hotspot-tooltip {
+    color: #fff;
+    text-shadow: 0 0 4px #000,
+                 0 0 6px #000;
+}
+
+/* Updated Hotspot Styles */
+.custom-hotspot {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent !important;
+    box-shadow: none;
+    transition: all 0.3s ease;
+    display: fixed;
+    align-items: center;
+    justify-content: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 15px;
+}
+
+/* Right-click instructions */
+.hotspot-instructions {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.hotspot-instructions svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .tour-editor-container {
+        flex-direction: column;
+    }
+    
+    .editor-preview, .editor-controls {
+        flex: none;
+        width: 100%;
+    }
+    
+    #pannellum-container {
+        height: 500px;
+    }
+}
+
+@media (max-width: 782px) {
+    .editor-tabs {
+        flex-wrap: wrap;
+    }
+    
+    .tab-button {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+    
+    .tab-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .scenes-table, .hotspots-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+    .direction-options {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* ========== MAIN TOUR CONTAINER STYLES ========== */
+.webronic-virtual-tour-container {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background: #000;
+    overflow: hidden;
+}
+
+/* Pannellum container - FIXED for proper z-index stacking */
+#pannellum-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Lower z-index for panorama */
+}
+
+/* Control containers - higher z-index but properly contained */
+.webronic-tl-cluster,
+.webronic-bl-cluster,
+.webronic-top-icon {
+    position: absolute;
+    z-index: 10; /* Higher than panorama but reasonable */
+    pointer-events: auto;
+}
+
+/* Top icons - Larger with text labels */
+.webronic-top-icon {
+    top: 16px;
+    right: 16px;
+    padding: 12px 16px;
+    background: #ffffff; /* Solid white - no transparency */
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 80px;
+    transition: all 0.3s ease;
+}
+
+.webronic-top-icon:hover {
+    background: #f8f9fa; /* Slightly darker on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+.webronic-icon-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.webronic-top-icon img { 
+    width: 32px; 
+    height: 32px; 
+    display: block;
+}
+
+.webronic-icon-text {
+    font-size: 12px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* Top-left cluster */
+.webronic-tl-cluster {
+    left: 16px;
+    top: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+/* Bottom-left cluster */
+.webronic-bl-cluster {
+    left: 16px;
+    bottom: 16px;
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+/* Card base styles */
+.webronic-card {
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    color: #111;
+    position: relative;
+    z-index: 11; /* Slightly higher than container */
+}
+
+/* Card 1 – small - FIXED SIZE */
+.webronic-card--small {
+    height: 70px;
+    width: 100px;
+    padding: 0;
+    background: #4888e8; /* Solid color - no transparency */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.webronic-card-top {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 6px;
+    background: #4888e8; /* Solid color */
+}
+
+.webronic-card-bottom {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    background: #ffffff; /* Solid white - no transparency */
+}
+
+.webronic-icon-bg {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.webronic-icon-bg img { 
+    width: 16px;
+    height: 16px;
+    object-fit: contain; 
+    filter: brightness(0) invert(1);
+}
+
+.webronic-card-numbers {
+    font-weight: 700;
+    font-size: 14px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.webronic-arrows {
+    display: flex;
+    gap: 10px;
+}
+
+.webronic-arrow-btn {
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    opacity: 0.95;
+    transition: opacity 0.2s ease;
+}
+
+.webronic-arrow-btn:disabled { 
+    opacity: .4; 
+    cursor: not-allowed; 
+}
+
+.webronic-arrow-btn:active {
+    opacity: 0.8;
+    transform: none;
+}
+
+.webronic-arrow-btn img { 
+    width: 35px;
+    height: 28px;
+    display: block;
+}
+
+/* Card 2 – title - FIXED SIZE */
+.webronic-card--title {
+    height: 70px;
+    width: 250px; /* Fixed width */
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    background: #ffffff; /* Solid white - no transparency */
+}
+
+.webronic-scene-title {
+    color: #000000;
+    line-height: 1.2;
+    text-wrap: balance;
+    font-family: 'Figtree', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+/* Navigation cards for Home and Back buttons as separate cards - FIXED SIZE */
+.webronic-card--navigation {
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 90px; /* Fixed width */
+    height: 60px; /* Fixed height */
+}
+
+/* Back card with white background */
+.webronic-card--back {
+    background: #ffffff; /* Solid white */
+}
+
+/* Home card with blue background */
+.webronic-card--home {
+    background: #4888E8; /* Solid blue */
+}
+
+.webronic-nav-btn {
+    background: transparent;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 13px;
+    width: 100%;
+    justify-content: center;
+    height: 100%;
+}
+
+/* FIX: Remove active/click color changes */
+.webronic-nav-btn:active,
+.webronic-nav-btn:focus {
+    background: transparent !important;
+    transform: none !important;
+}
+
+/* Back button styling */
+.webronic-card--back .webronic-nav-btn {
+    color: #333;
+}
+
+.webronic-card--back .webronic-nav-btn:hover:not(:disabled) {
+    background: rgba(72, 136, 232, 0.1);
+    transform: translateY(-1px);
+}
+
+/* Home button styling - white text on blue background */
+.webronic-card--home .webronic-nav-btn {
+    color: #ffffff;
+}
+
+.webronic-card--home .webronic-nav-btn:hover:not(:disabled) {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-1px);
+}
+
+.webronic-nav-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.webronic-nav-btn-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.webronic-nav-btn img {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+/* ========== INFO HOTSPOT CARD STYLES (From editor.css) ========== */
+.info-hotspot-card {
+    position: absolute;
+    background: white; /* Solid white background */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    min-width: 200px;
+    max-width: 200px;
+    border: 1px solid #e0e0e0;
+    font-family: Arial, sans-serif;
+    z-index: 10000; /* High z-index to appear above everything */
+}
+
+.info-hotspot-card::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 20px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid white; /* Solid white arrow */
+    z-index: 10001;
+}
+
+.hotspot-card-image {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #f5f5f5; /* Solid light gray background */
+}
+
+.hotspot-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hotspot-card-title {
+    font-weight: 700;
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 8px;
+    text-align: left;
+    word-wrap: break-word;
+    line-height: 1.3;
+}
+
+.hotspot-card-info {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: left;
+    word-wrap: break-word;
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+/* Hotspot tooltip for navigation */
+.hotspot-tooltip {
+    position: absolute;
+    background: transparent;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.8);
+    z-index: 100;
+    margin-bottom: 10px;
+}
+
+/* Pannellum container fixes to remove black space */
+.pnlm-container,
+.pnlm-render-container { 
+    width: 100% !important; 
+    height: 100% !important; 
+}
+
+.pnlm-grab { 
+    cursor: grab !important; 
+}
+
+.pnlm-grabbing { 
+    cursor: grabbing !important; 
+}
+
+/* Hide Pannellum default controls */
+.pnlm-zoom-controls,
+.pnlm-zoom-in,
+.pnlm-zoom-out,
+.pnlm-fullscreen-toggle-button { 
+    display: none !important; 
+}
+
+/* Remove old fullscreen/exit buttons */
+.webronic-home, .webronic-extend {
+    display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .webronic-virtual-tour-container { 
+        height: 70vh; 
+    }
+    
+    .webronic-top-icon { 
+        padding: 8px 12px; 
+        min-width: 100px; 
+    }
+    
+    .webronic-top-icon img { 
+        width: 24px; 
+        height: 24px; 
+    }
+    
+    .webronic-icon-text { 
+        font-size: 11px; 
+    }
+    
+    .webronic-card--title { 
+        width: 180px; /* Fixed smaller width for mobile */
+        padding: 8px 12px; 
+        height: 60px;
+    }
+    
+    .webronic-card--small { 
+        width: 80px;
+        height: 60px;
+    }
+    
+    .webronic-scene-title { 
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    .webronic-card-numbers { 
+        font-size: 12px;
+    }
+    
+    .webronic-icon-bg img { 
+        width: 14px;
+        height: 14px;
+    }
+    
+    .webronic-arrow-btn img { 
+        width: 28px;
+        height: 22px;
+    }
+    
+    .webronic-card-top, .webronic-card-bottom { 
+        padding: 4px;
+    }
+    
+    .webronic-arrows { 
+        gap: 6px;
+    }
+    
+    .webronic-tl-cluster {
+        left: 12px;
+        top: 12px;
+    }
+    
+    .webronic-card--navigation {
+        padding: 6px;
+        width: 80px; /* Fixed smaller width for mobile */
+        height: 55px; /* Fixed smaller height for mobile */
+    }
+    
+    .webronic-nav-btn {
+        padding: 4px 6px;
+        font-size: 11px;
+    }
+    
+    .webronic-nav-btn img {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .webronic-fullscreen-toggle {
+        right: 12px;
+        min-width: 70px;
+        padding: 10px 12px;
+    }
+
+    /* Info hotspot card mobile adjustments */
+    .info-hotspot-card {
+        min-width: 180px;
+        max-width: 220px;
+        padding: 12px;
+    }
+
+    .hotspot-card-image {
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    .hotspot-card-title {
+        font-size: 14px;
+    }
+
+    .hotspot-card-info {
+        font-size: 12px;
+        max-height: 80px;
+    }
+}
