@@ -1,7 +1,8 @@
 # 🌐 Webronic 360 Tour - WordPress Virtual Tour Plugin
 
 <div align="center">
-
+### Main Picture
+![Main Picture](/assets/img/4box.png)
 
 **Transform any location into an immersive 360° virtual experience**
 
