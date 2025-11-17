@@ -5,7 +5,7 @@
 ![WordPress Plugin Version](https://img.shields.io/badge/WordPress-5.0%2B-blue)
 ![License](https://img.shields.io/badge/License-GPL--2.0%2B-green)
 ![PHP Version](https://img.shields.io/badge/PHP-7.4%2B-purple)
-![Downloads](https://img.shields.io/badge/Downloads-1K%2B-orange)
+
 ![Rating](https://img.shields.io/badge/Rating-★★★★★-yellow)
 
 **Transform any location into an immersive 360° virtual experience**
