@@ -15,7 +15,7 @@
 
 Step into the future of virtual exploration with **Webronic 360 Tour** – the ultimate WordPress plugin for creating stunning, interactive 360-degree virtual tours. Whether you're showcasing real estate properties, museum exhibits, hotel rooms, business spaces, or tourist destinations, bring your locations to life with immersive panoramic experiences that captivate your audience.
 
-With Webronic 360 Tour, you don't just show places – you transport visitors directly into them. Let your users explore every angle, discover hidden details, and navigate seamlessly through spaces as if they were physically there. Perfect for businesses, photographers, real estate agents, tour operators, educational institutions, and anyone looking to create engaging virtual experiences.
+With Webronic 360 Tour, you don't just show places – you transport visitors directly into them. Let your users explore every angle, discover hidden details, and navigate seamlessly through spaces as if they were physically there. Perfect for businesses, photographers, real estate agents, tour operators, educational institutions, and anyone looking to create engaging virtual experiences..
 
 
 ---
@@ -61,7 +61,7 @@ Right-click anywhere on your panorama to place interactive hotspots. Share infor
 <summary><strong>🖼️ Click to view all screenshots (15 images)</strong></summary>
 
 ### Main Dashboard
-![Main Dashboard](https://raw.githubusercontent.com/ramanawebronic-cyber/Virtual-360-Tour/branch/assets/img/4box.png)
+![Main Dashboard](https://raw.githubusercontent.com/ramanawebronic-cyber/map-tourtest-main/main/assets/img/4box.png)
 *Create unlimited tours with an intuitive dashboard. Free users get 1 tour with 5 scenes and 5 hotspots to get started.*
 
 ### Tour Creation Interface
