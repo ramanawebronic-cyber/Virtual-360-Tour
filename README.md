@@ -9,7 +9,7 @@
 [Demo](https://your-demo-link.com) • 
 [Documentation](https://your-docs-link.com) • 
 [Support](https://your-support-link.com) • 
-[Pro Version](https://your-pro-link.com)
+[Pro Version](https://wplicense.webronics.com/checkout/?add-to-cart=189)
 
 </div>
 
