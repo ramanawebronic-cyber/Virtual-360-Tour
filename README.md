@@ -68,7 +68,7 @@ Right-click anywhere on your panorama to place interactive hotspots. Share infor
 <summary><strong>🖼️ Click to view all screenshots (15 images)</strong></summary>
 
 ### Main Dashboard
-![Main Dashboard](screenshots/screen1.jpg)
+![Main Dashboard](/assets/img/4box.png)
 *Create unlimited tours with an intuitive dashboard. Free users get 1 tour with 5 scenes and 5 hotspots to get started.*
 
 ### Tour Creation Interface
