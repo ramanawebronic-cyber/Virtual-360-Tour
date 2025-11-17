@@ -2,12 +2,7 @@
 
 <div align="center">
 
-![WordPress Plugin Version](https://img.shields.io/badge/WordPress-5.0%2B-blue)
-![License](https://img.shields.io/badge/License-GPL--2.0%2B-green)
-![Downloads](https://img.shields.io/badge/Downloads-1K%2B-orange)
-![PHP Version](https://img.shields.io/badge/PHP-7.4%2B-purple)
-
-![Rating](https://img.shields.io/badge/Rating-★★★★★-yellow)
+<img src="assets/img/round.png" alt="Webronic 360 Tour Logo" width="200"/>
 
 **Transform any location into an immersive 360° virtual experience**
 
@@ -64,70 +59,217 @@ Right-click anywhere on your panorama to place interactive hotspots. Share infor
 
 ## 📸 Screenshots
 
-<details>
-<summary><strong>🖼️ Click to view all screenshots (15 images)</strong></summary>
+Navigate through screenshots: **[1](#screenshot-1)** | **[2](#screenshot-2)** | **[3](#screenshot-3)** | **[4](#screenshot-4)** | **[5](#screenshot-5)** | **[6](#screenshot-6)** | **[7](#screenshot-7)** | **[8](#screenshot-8)** | **[9](#screenshot-9)** | **[10](#screenshot-10)** | **[11](#screenshot-11)** | **[12](#screenshot-12)** | **[13](#screenshot-13)** | **[14](#screenshot-14)** | **[15](#screenshot-15)**
 
-### Main Dashboard
-![Main Dashboard](/assets/img/4box.png)
-*Create unlimited tours with an intuitive dashboard. Free users get 1 tour with 5 scenes and 5 hotspots to get started.*
+---
 
-### Tour Creation Interface
-![Tour Creation](screenshots/screen2.jpg)
-*Add new tours with a single click. The clean interface makes tour management effortless.*
+### <a name="screenshot-1"></a>Screenshot 1: Main Dashboard
 
-### Tour Edit Screen
-![Edit Tour](screenshots/screen3.jpg)
-*Edit your tours easily with full control over settings, scenes, and hotspots.*
+![Main Dashboard](assets/img/screen1.png)
 
-### Upgrade Options
-![Upgrade Button](screenshots/screen4.jpg)
-*Free users can upgrade anytime to unlock unlimited scenes and hotspots with the Pro version.*
+**Create unlimited tours with an intuitive dashboard.** Free users get 1 tour with 5 scenes and 5 hotspots to get started.
 
-### Scene Management
-![Add Scenes](screenshots/screen5.jpg)
-*Add up to 5 scenes for free users, unlimited for Pro. Simple scene management with drag-and-drop support.*
+<div align="center">
 
-### Scene Limit Notification
-![Scene Limit](screenshots/screen6.jpg)
-*Clear notifications when you reach the free tier limit. Upgrade seamlessly to continue creating.*
+**[Next →](#screenshot-2)**
 
-### Panorama Viewer
-![360 Viewer](screenshots/screen7.jpg)
-*High-quality 360° panorama viewer with smooth navigation and controls.*
+</div>
 
-### Hotspot Placement
-![Add Hotspots](screenshots/screen8.jpg)
-*Right-click anywhere on your panorama to add hotspots instantly.*
+---
 
-### Navigation Hotspots
-![Navigation Type](screenshots/screen9.jpg)
-*Connect scenes with navigation hotspots for seamless tour flow.*
+### <a name="screenshot-2"></a>Screenshot 2: Tour Creation Interface
 
-### Information Hotspots
-![Information Type](screenshots/screen10.jpg)
-*Share detailed information about locations with information hotspots.*
+![Tour Creation](assets/img/screen2.png)
 
-### Hotspot Content Options
-![Hotspot Content](screenshots/screen11.jpg)
-*Embed text, images, videos, GIFs, and website links in your hotspots.*
+**Add new tours with a single click.** The clean interface makes tour management effortless.
 
-### Shortcode Integration
-![Shortcode](screenshots/screen12.jpg)
-*Get your tour shortcode instantly and embed it anywhere on your WordPress site.*
+<div align="center">
 
-### Elementor Widget
-![Elementor Widget](screenshots/screen13.jpg)
-*Drag and drop tours into any page with built-in Elementor widget support.*
+**[← Previous](#screenshot-1)** | **[Next →](#screenshot-3)**
 
-### Mobile Responsive View
-![Mobile View](screenshots/screen14.jpg)
-*Fully responsive tours that work beautifully on all devices.*
+</div>
 
-### Frontend Tour Display
-![Frontend Display](screenshots/screen15.jpg)
-*Immersive full-window virtual tours that engage your visitors instantly.*
+---
 
-</details>
+### <a name="screenshot-3"></a>Screenshot 3: Tour Edit Screen
+
+![Edit Tour](assets/img/screen3.png)
+
+**Edit your tours easily** with full control over settings, scenes, and hotspots.
+
+<div align="center">
+
+**[← Previous](#screenshot-2)** | **[Next →](#screenshot-4)**
+
+</div>
+
+---
+
+### <a name="screenshot-4"></a>Screenshot 4: Upgrade Options
+
+![Upgrade Button](assets/img/screen4.png)
+
+**Free users can upgrade anytime** to unlock unlimited scenes and hotspots with the Pro version.
+
+<div align="center">
+
+**[← Previous](#screenshot-3)** | **[Next →](#screenshot-5)**
+
+</div>
+
+---
+
+### <a name="screenshot-5"></a>Screenshot 5: Scene Management
+
+![Add Scenes](assets/img/screen5.png)
+
+**Add up to 5 scenes for free users, unlimited for Pro.** Simple scene management with drag-and-drop support.
+
+<div align="center">
+
+**[← Previous](#screenshot-4)** | **[Next →](#screenshot-6)**
+
+</div>
+
+---
+
+### <a name="screenshot-6"></a>Screenshot 6: Scene Limit Notification
+
+![Scene Limit](assets/img/screen6.png)
+
+**Clear notifications when you reach the free tier limit.** Upgrade seamlessly to continue creating.
+
+<div align="center">
+
+**[← Previous](#screenshot-5)** | **[Next →](#screenshot-7)**
+
+</div>
+
+---
+
+### <a name="screenshot-7"></a>Screenshot 7: Panorama Viewer
+
+![360 Viewer](assets/img/screen7.png)
+
+**High-quality 360° panorama viewer** with smooth navigation and controls.
+
+<div align="center">
+
+**[← Previous](#screenshot-6)** | **[Next →](#screenshot-8)**
+
+</div>
+
+---
+
+### <a name="screenshot-8"></a>Screenshot 8: Hotspot Placement
+
+![Add Hotspots](assets/img/screen8.png)
+
+**Right-click anywhere on your panorama** to add hotspots instantly.
+
+<div align="center">
+
+**[← Previous](#screenshot-7)** | **[Next →](#screenshot-9)**
+
+</div>
+
+---
+
+### <a name="screenshot-9"></a>Screenshot 9: Navigation Hotspots
+
+![Navigation Type](assets/img/screen9.png)
+
+**Connect scenes with navigation hotspots** for seamless tour flow.
+
+<div align="center">
+
+**[← Previous](#screenshot-8)** | **[Next →](#screenshot-10)**
+
+</div>
+
+---
+
+### <a name="screenshot-10"></a>Screenshot 10: Information Hotspots
+
+![Information Type](assets/img/screen10.png)
+
+**Share detailed information about locations** with information hotspots.
+
+<div align="center">
+
+**[← Previous](#screenshot-9)** | **[Next →](#screenshot-11)**
+
+</div>
+
+---
+
+### <a name="screenshot-11"></a>Screenshot 11: Hotspot Content Options
+
+![Hotspot Content](assets/img/screen11.png)
+
+**Embed text, images, videos, GIFs, and website links** in your hotspots.
+
+<div align="center">
+
+**[← Previous](#screenshot-10)** | **[Next →](#screenshot-12)**
+
+</div>
+
+---
+
+### <a name="screenshot-12"></a>Screenshot 12: Shortcode Integration
+
+![Shortcode](assets/img/screen12.png)
+
+**Get your tour shortcode instantly** and embed it anywhere on your WordPress site.
+
+<div align="center">
+
+**[← Previous](#screenshot-11)** | **[Next →](#screenshot-13)**
+
+</div>
+
+---
+
+### <a name="screenshot-13"></a>Screenshot 13: Elementor Widget
+
+![Elementor Widget](assets/img/screen13.png)
+
+**Drag and drop tours into any page** with built-in Elementor widget support.
+
+<div align="center">
+
+**[← Previous](#screenshot-12)** | **[Next →](#screenshot-14)**
+
+</div>
+
+---
+
+### <a name="screenshot-14"></a>Screenshot 14: Mobile Responsive View
+
+![Mobile View](assets/img/screen14.png)
+
+**Fully responsive tours** that work beautifully on all devices.
+
+<div align="center">
+
+**[← Previous](#screenshot-13)** | **[Next →](#screenshot-15)**
+
+</div>
+
+---
+
+### <a name="screenshot-15"></a>Screenshot 15: Frontend Tour Display
+
+![Frontend Display](assets/img/screen15.png)
+
+**Immersive full-window virtual tours** that engage your visitors instantly.
+
+<div align="center">
+
+**[← Previous](#screenshot-14)** | **[Back to Top ↑](#screenshots)**
+
+</div>
 
 ---
 
@@ -396,14 +538,6 @@ If you find this plugin helpful, please:
 - [ ] Augmented reality features
 
 Have a feature suggestion? [Let us know!](https://github.com/yourusername/webronic-360-tour/issues)
-
----
-
-## 📊 Stats
-
-![GitHub stars](https://img.shields.io/github/stars/yourusername/webronic-360-tour?style=social)
-![GitHub forks](https://img.shields.io/github/forks/yourusername/webronic-360-tour?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/yourusername/webronic-360-tour?style=social)
 
 ---
 
