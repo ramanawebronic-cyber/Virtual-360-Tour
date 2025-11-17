@@ -154,7 +154,6 @@ Perfect for getting started with virtual tours:
 - ✅ **Full-Width Tag** - Display tours in full-width layouts
 - ✅ **WP User Roles** - Support for Editors and Authors
 - ✅ **Asset Loading Control** - Load plugin assets only where needed
-- ✅ **Mobile Notifications** - Optional front-end notices for mobile users
 - ✅ **Mobile Media Resize** - Optimize images for mobile devices
 - ✅ **Version Rollback** - Roll back to previous plugin versions if needed
 - ✅ **Community Support** - Get help from the WordPress support forum
