@@ -69,7 +69,7 @@ Right-click anywhere on your panorama to place interactive hotspots. Share infor
 *Create unlimited tours with an intuitive dashboard. Free users get 1 tour with 5 scenes and 5 hotspots to get started.*
 
 ### Tour Creation Interface
-![Tour Creation](https://github.com/ramanawebronic-cyber/map-tourtest-main/issues/3#issue-3633135964)
+![Tour Creation](https://github.com/user-attachments/assets/0152f8ce-5610-4af6-ae03-5245b902d7a7)
 *Add new tours with a single click. The clean interface makes tour management effortless.*
 
 ### Tour Edit Screen
