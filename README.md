@@ -64,15 +64,65 @@ Right-click anywhere on your panorama to place interactive hotspots. Share infor
 <details>
 <summary><strong>🖼️ Click to view all screenshots (15 images)</strong></summary>
 
-## 📸 Screenshots (Swipe on mobile ➡️)
+### Main Dashboard
+![Main Dashboard](https://github.com/user-attachments/assets/699a17fb-be9d-4a06-9dca-a4990adbb9e1)
+*Create unlimited tours with an intuitive dashboard. Free users get 1 tour with 5 scenes and 5 hotspots to get started.*
 
-<div style="display: flex; overflow-x: auto; gap: 10px; padding: 10px;">
-  <img src="https://github.com/user-attachments/assets/699a17fb-be9d-4a06-9dca-a4990adbb9e1" width="300" />
-  <img src="https://github.com/user-attachments/assets/317d7c32-7c75-4ad5-9553-80e8824f5bdc" width="300" />
-  <img src="https://github.com/user-attachments/assets/xxxxxxx" width="300" />
-  <img src="https://github.com/user-attachments/assets/yyyyyyy" width="300" />
-  <img src="https://github.com/user-attachments/assets/zzzzzzz" width="300" />
-</div>
+### Tour Creation Interface
+![Tour Creation](screenshots/screen2.jpg)
+*Add new tours with a single click. The clean interface makes tour management effortless.*
+
+### Tour Edit Screen
+![Edit Tour](screenshots/screen3.jpg)
+*Edit your tours easily with full control over settings, scenes, and hotspots.*
+
+### Upgrade Options
+![Upgrade Button](screenshots/screen4.jpg)
+*Free users can upgrade anytime to unlock unlimited scenes and hotspots with the Pro version.*
+
+### Scene Management
+![Add Scenes](screenshots/screen5.jpg)
+*Add up to 5 scenes for free users, unlimited for Pro. Simple scene management with drag-and-drop support.*
+
+### Scene Limit Notification
+![Scene Limit](screenshots/screen6.jpg)
+*Clear notifications when you reach the free tier limit. Upgrade seamlessly to continue creating.*
+
+### Panorama Viewer
+![360 Viewer](screenshots/screen7.jpg)
+*High-quality 360° panorama viewer with smooth navigation and controls.*
+
+### Hotspot Placement
+![Add Hotspots](screenshots/screen8.jpg)
+*Right-click anywhere on your panorama to add hotspots instantly.*
+
+### Navigation Hotspots
+![Navigation Type](screenshots/screen9.jpg)
+*Connect scenes with navigation hotspots for seamless tour flow.*
+
+### Information Hotspots
+![Information Type](screenshots/screen10.jpg)
+*Share detailed information about locations with information hotspots.*
+
+### Hotspot Content Options
+![Hotspot Content](screenshots/screen11.jpg)
+*Embed text, images, videos, GIFs, and website links in your hotspots.*
+
+### Shortcode Integration
+![Shortcode](screenshots/screen12.jpg)
+*Get your tour shortcode instantly and embed it anywhere on your WordPress site.*
+
+### Elementor Widget
+![Elementor Widget](screenshots/screen13.jpg)
+*Drag and drop tours into any page with built-in Elementor widget support.*
+
+### Mobile Responsive View
+![Mobile View](screenshots/screen14.jpg)
+*Fully responsive tours that work beautifully on all devices.*
+
+### Frontend Tour Display
+![Frontend Display](screenshots/screen15.jpg)
+*Immersive full-window virtual tours that engage your visitors instantly.*
 
 </details>
 
