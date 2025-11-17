@@ -2,7 +2,6 @@
 
 <div align="center">
 
-<img src="assets/img/round.png" alt="Webronic 360 Tour Logo" width="200"/>
 
 **Transform any location into an immersive 360° virtual experience**
 
@@ -18,7 +17,6 @@ Step into the future of virtual exploration with **Webronic 360 Tour** – the u
 
 With Webronic 360 Tour, you don't just show places – you transport visitors directly into them. Let your users explore every angle, discover hidden details, and navigate seamlessly through spaces as if they were physically there. Perfect for businesses, photographers, real estate agents, tour operators, educational institutions, and anyone looking to create engaging virtual experiences.
 
-**🎯 No coding required. No complex setup. Just pure immersive storytelling.**
 
 ---
 
@@ -57,435 +55,72 @@ Right-click anywhere on your panorama to place interactive hotspots. Share infor
 
 ---
 
-## 📸 Plugin Screenshots
+## 📸 Screenshots
 
-<div align="center">
+<details>
+<summary><strong>🖼️ Click to view all screenshots (15 images)</strong></summary>
 
-### 🖼️ Screenshot Gallery
+### Main Dashboard
+![Main Dashboard](/assets/img/4box.png)
+*Create unlimited tours with an intuitive dashboard. Free users get 1 tour with 5 scenes and 5 hotspots to get started.*
 
-**Click the buttons below to navigate through screenshots**
+### Tour Creation Interface
+![Tour Creation](screenshots/screen2.jpg)
+*Add new tours with a single click. The clean interface makes tour management effortless.*
 
-</div>
+### Tour Edit Screen
+![Edit Tour](screenshots/screen3.jpg)
+*Edit your tours easily with full control over settings, scenes, and hotspots.*
 
----
+### Upgrade Options
+![Upgrade Button](screenshots/screen4.jpg)
+*Free users can upgrade anytime to unlock unlimited scenes and hotspots with the Pro version.*
 
-<div align="center" id="screenshot-1">
+### Scene Management
+![Add Scenes](screenshots/screen5.jpg)
+*Add up to 5 scenes for free users, unlimited for Pro. Simple scene management with drag-and-drop support.*
 
-### Screenshot 1 of 15: Main Dashboard
+### Scene Limit Notification
+![Scene Limit](screenshots/screen6.jpg)
+*Clear notifications when you reach the free tier limit. Upgrade seamlessly to continue creating.*
 
-<img src="assets/img/screen1.png" alt="Main Dashboard" width="100%"/>
+### Panorama Viewer
+![360 Viewer](screenshots/screen7.jpg)
+*High-quality 360° panorama viewer with smooth navigation and controls.*
 
-**Create unlimited tours with an intuitive dashboard.** Free users get 1 tour with 5 scenes and 5 hotspots to get started.
+### Hotspot Placement
+![Add Hotspots](screenshots/screen8.jpg)
+*Right-click anywhere on your panorama to add hotspots instantly.*
 
-<br><br>
+### Navigation Hotspots
+![Navigation Type](screenshots/screen9.jpg)
+*Connect scenes with navigation hotspots for seamless tour flow.*
 
-<table align="center">
-<tr>
-<td width="33%" align="center"></td>
-<td width="34%" align="center">
-<b>1</b> | <a href="#screenshot-2">2</a> | <a href="#screenshot-3">3</a> | <a href="#screenshot-4">4</a> | <a href="#screenshot-5">5</a> | <a href="#screenshot-6">6</a> | <a href="#screenshot-7">7</a> | <a href="#screenshot-8">8</a> | <a href="#screenshot-9">9</a> | <a href="#screenshot-10">10</a> | <a href="#screenshot-11">11</a> | <a href="#screenshot-12">12</a> | <a href="#screenshot-13">13</a> | <a href="#screenshot-14">14</a> | <a href="#screenshot-15">15</a>
-</td>
-<td width="33%" align="right">
-<a href="#screenshot-2">▶ Next</a>
-</td>
-</tr>
-</table>
+### Information Hotspots
+![Information Type](screenshots/screen10.jpg)
+*Share detailed information about locations with information hotspots.*
 
-</div>
+### Hotspot Content Options
+![Hotspot Content](screenshots/screen11.jpg)
+*Embed text, images, videos, GIFs, and website links in your hotspots.*
 
----
+### Shortcode Integration
+![Shortcode](screenshots/screen12.jpg)
+*Get your tour shortcode instantly and embed it anywhere on your WordPress site.*
 
-<div align="center" id="screenshot-2">
+### Elementor Widget
+![Elementor Widget](screenshots/screen13.jpg)
+*Drag and drop tours into any page with built-in Elementor widget support.*
 
-### Screenshot 2 of 15: Tour Creation Interface
+### Mobile Responsive View
+![Mobile View](screenshots/screen14.jpg)
+*Fully responsive tours that work beautifully on all devices.*
 
-<img src="assets/img/screen2.png" alt="Tour Creation Interface" width="100%"/>
+### Frontend Tour Display
+![Frontend Display](screenshots/screen15.jpg)
+*Immersive full-window virtual tours that engage your visitors instantly.*
 
-**Add new tours with a single click.** The clean interface makes tour management effortless.
-
-<br><br>
-
-<table align="center">
-<tr>
-<td width="33%" align="left">
-<a href="#screenshot-1">◀ Previous</a>
-</td>
-<td width="34%" align="center">
-<a href="#screenshot-1">1</a> | <b>2</b> | <a href="#screenshot-3">3</a> | <a href="#screenshot-4">4</a> | <a href="#screenshot-5">5</a> | <a href="#screenshot-6">6</a> | <a href="#screenshot-7">7</a> | <a href="#screenshot-8">8</a> | <a href="#screenshot-9">9</a> | <a href="#screenshot-10">10</a> | <a href="#screenshot-11">11</a> | <a href="#screenshot-12">12</a> | <a href="#screenshot-13">13</a> | <a href="#screenshot-14">14</a> | <a href="#screenshot-15">15</a>
-</td>
-<td width="33%" align="right">
-<a href="#screenshot-3">▶ Next</a>
-</td>
-</tr>
-</table>
-
-</div>
-
----
-
-<div align="center" id="screenshot-3">
-
-### Screenshot 3 of 15: Tour Edit Screen
-
-<img src="assets/img/screen3.png" alt="Tour Edit Screen" width="100%"/>
-
-**Edit your tours easily** with full control over settings, scenes, and hotspots.
-
-<br><br>
-
-<table align="center">
-<tr>
-<td width="33%" align="left">
-<a href="#screenshot-2">◀ Previous</a>
-</td>
-<td width="34%" align="center">
-<a href="#screenshot-1">1</a> | <a href="#screenshot-2">2</a> | <b>3</b> | <a href="#screenshot-4">4</a> | <a href="#screenshot-5">5</a> | <a href="#screenshot-6">6</a> | <a href="#screenshot-7">7</a> | <a href="#screenshot-8">8</a> | <a href="#screenshot-9">9</a> | <a href="#screenshot-10">10</a> | <a href="#screenshot-11">11</a> | <a href="#screenshot-12">12</a> | <a href="#screenshot-13">13</a> | <a href="#screenshot-14">14</a> | <a href="#screenshot-15">15</a>
-</td>
-<td width="33%" align="right">
-<a href="#screenshot-4">▶ Next</a>
-</td>
-</tr>
-</table>
-
-</div>
-
----
-
-<div align="center" id="screenshot-4">
-
-### Screenshot 4 of 15: Upgrade Options
-
-<img src="assets/img/screen4.png" alt="Upgrade Options" width="100%"/>
-
-**Free users can upgrade anytime** to unlock unlimited scenes and hotspots with the Pro version.
-
-<br><br>
-
-<table align="center">
-<tr>
-<td width="33%" align="left">
-<a href="#screenshot-3">◀ Previous</a>
-</td>
-<td width="34%" align="center">
-<a href="#screenshot-1">1</a> | <a href="#screenshot-2">2</a> | <a href="#screenshot-3">3</a> | <b>4</b> | <a href="#screenshot-5">5</a> | <a href="#screenshot-6">6</a> | <a href="#screenshot-7">7</a> | <a href="#screenshot-8">8</a> | <a href="#screenshot-9">9</a> | <a href="#screenshot-10">10</a> | <a href="#screenshot-11">11</a> | <a href="#screenshot-12">12</a> | <a href="#screenshot-13">13</a> | <a href="#screenshot-14">14</a> | <a href="#screenshot-15">15</a>
-</td>
-<td width="33%" align="right">
-<a href="#screenshot-5">▶ Next</a>
-</td>
-</tr>
-</table>
-
-</div>
-
----
-
-<div align="center" id="screenshot-5">
-
-### Screenshot 5 of 15: Scene Management
-
-<img src="assets/img/screen5.png" alt="Scene Management" width="100%"/>
-
-**Add up to 5 scenes for free users, unlimited for Pro.** Simple scene management with drag-and-drop support.
-
-<br><br>
-
-<table align="center">
-<tr>
-<td width="33%" align="left">
-<a href="#screenshot-4">◀ Previous</a>
-</td>
-<td width="34%" align="center">
-<a href="#screenshot-1">1</a> | <a href="#screenshot-2">2</a> | <a href="#screenshot-3">3</a> | <a href="#screenshot-4">4</a> | <b>5</b> | <a href="#screenshot-6">6</a> | <a href="#screenshot-7">7</a> | <a href="#screenshot-8">8</a> | <a href="#screenshot-9">9</a> | <a href="#screenshot-10">10</a> | <a href="#screenshot-11">11</a> | <a href="#screenshot-12">12</a> | <a href="#screenshot-13">13</a> | <a href="#screenshot-14">14</a> | <a href="#screenshot-15">15</a>
-</td>
-<td width="33%" align="right">
-<a href="#screenshot-6">▶ Next</a>
-</td>
-</tr>
-</table>
-
-</div>
-
----
-
-<div align="center" id="screenshot-6">
-
-### Screenshot 6 of 15: Scene Limit Notification
-
-<img src="assets/img/screen6.png" alt="Scene Limit Notification" width="100%"/>
-
-**Clear notifications when you reach the free tier limit.** Upgrade seamlessly to continue creating.
-
-<br><br>
-
-<table align="center">
-<tr>
-<td width="33%" align="left">
-<a href="#screenshot-5">◀ Previous</a>
-</td>
-<td width="34%" align="center">
-<a href="#screenshot-1">1</a> | <a href="#screenshot-2">2</a> | <a href="#screenshot-3">3</a> | <a href="#screenshot-4">4</a> | <a href="#screenshot-5">5</a> | <b>6</b> | <a href="#screenshot-7">7</a> | <a href="#screenshot-8">8</a> | <a href="#screenshot-9">9</a> | <a href="#screenshot-10">10</a> | <a href="#screenshot-11">11</a> | <a href="#screenshot-12">12</a> | <a href="#screenshot-13">13</a> | <a href="#screenshot-14">14</a> | <a href="#screenshot-15">15</a>
-</td>
-<td width="33%" align="right">
-<a href="#screenshot-7">▶ Next</a>
-</td>
-</tr>
-</table>
-
-</div>
-
----
-
-<div align="center" id="screenshot-7">
-
-### Screenshot 7 of 15: Panorama Viewer
-
-<img src="assets/img/screen7.png" alt="Panorama Viewer" width="100%"/>
-
-**High-quality 360° panorama viewer** with smooth navigation and controls.
-
-<br><br>
-
-<table align="center">
-<tr>
-<td width="33%" align="left">
-<a href="#screenshot-6">◀ Previous</a>
-</td>
-<td width="34%" align="center">
-<a href="#screenshot-1">1</a> | <a href="#screenshot-2">2</a> | <a href="#screenshot-3">3</a> | <a href="#screenshot-4">4</a> | <a href="#screenshot-5">5</a> | <a href="#screenshot-6">6</a> | <b>7</b> | <a href="#screenshot-8">8</a> | <a href="#screenshot-9">9</a> | <a href="#screenshot-10">10</a> | <a href="#screenshot-11">11</a> | <a href="#screenshot-12">12</a> | <a href="#screenshot-13">13</a> | <a href="#screenshot-14">14</a> | <a href="#screenshot-15">15</a>
-</td>
-<td width="33%" align="right">
-<a href="#screenshot-8">▶ Next</a>
-</td>
-</tr>
-</table>
-
-</div>
-
----
-
-<div align="center" id="screenshot-8">
-
-### Screenshot 8 of 15: Hotspot Placement
-
-<img src="assets/img/screen8.png" alt="Hotspot Placement" width="100%"/>
-
-**Right-click anywhere on your panorama** to add hotspots instantly.
-
-<br><br>
-
-<table align="center">
-<tr>
-<td width="33%" align="left">
-<a href="#screenshot-7">◀ Previous</a>
-</td>
-<td width="34%" align="center">
-<a href="#screenshot-1">1</a> | <a href="#screenshot-2">2</a> | <a href="#screenshot-3">3</a> | <a href="#screenshot-4">4</a> | <a href="#screenshot-5">5</a> | <a href="#screenshot-6">6</a> | <a href="#screenshot-7">7</a> | <b>8</b> | <a href="#screenshot-9">9</a> | <a href="#screenshot-10">10</a> | <a href="#screenshot-11">11</a> | <a href="#screenshot-12">12</a> | <a href="#screenshot-13">13</a> | <a href="#screenshot-14">14</a> | <a href="#screenshot-15">15</a>
-</td>
-<td width="33%" align="right">
-<a href="#screenshot-9">▶ Next</a>
-</td>
-</tr>
-</table>
-
-</div>
-
----
-
-<div align="center" id="screenshot-9">
-
-### Screenshot 9 of 15: Navigation Hotspots
-
-<img src="assets/img/screen9.png" alt="Navigation Hotspots" width="100%"/>
-
-**Connect scenes with navigation hotspots** for seamless tour flow.
-
-<br><br>
-
-<table align="center">
-<tr>
-<td width="33%" align="left">
-<a href="#screenshot-8">◀ Previous</a>
-</td>
-<td width="34%" align="center">
-<a href="#screenshot-1">1</a> | <a href="#screenshot-2">2</a> | <a href="#screenshot-3">3</a> | <a href="#screenshot-4">4</a> | <a href="#screenshot-5">5</a> | <a href="#screenshot-6">6</a> | <a href="#screenshot-7">7</a> | <a href="#screenshot-8">8</a> | <b>9</b> | <a href="#screenshot-10">10</a> | <a href="#screenshot-11">11</a> | <a href="#screenshot-12">12</a> | <a href="#screenshot-13">13</a> | <a href="#screenshot-14">14</a> | <a href="#screenshot-15">15</a>
-</td>
-<td width="33%" align="right">
-<a href="#screenshot-10">▶ Next</a>
-</td>
-</tr>
-</table>
-
-</div>
-
----
-
-<div align="center" id="screenshot-10">
-
-### Screenshot 10 of 15: Information Hotspots
-
-<img src="assets/img/screen10.png" alt="Information Hotspots" width="100%"/>
-
-**Share detailed information about locations** with information hotspots.
-
-<br><br>
-
-<table align="center">
-<tr>
-<td width="33%" align="left">
-<a href="#screenshot-9">◀ Previous</a>
-</td>
-<td width="34%" align="center">
-<a href="#screenshot-1">1</a> | <a href="#screenshot-2">2</a> | <a href="#screenshot-3">3</a> | <a href="#screenshot-4">4</a> | <a href="#screenshot-5">5</a> | <a href="#screenshot-6">6</a> | <a href="#screenshot-7">7</a> | <a href="#screenshot-8">8</a> | <a href="#screenshot-9">9</a> | <b>10</b> | <a href="#screenshot-11">11</a> | <a href="#screenshot-12">12</a> | <a href="#screenshot-13">13</a> | <a href="#screenshot-14">14</a> | <a href="#screenshot-15">15</a>
-</td>
-<td width="33%" align="right">
-<a href="#screenshot-11">▶ Next</a>
-</td>
-</tr>
-</table>
-
-</div>
-
----
-
-<div align="center" id="screenshot-11">
-
-### Screenshot 11 of 15: Hotspot Content Options
-
-<img src="assets/img/screen11.png" alt="Hotspot Content Options" width="100%"/>
-
-**Embed text, images, videos, GIFs, and website links** in your hotspots.
-
-<br><br>
-
-<table align="center">
-<tr>
-<td width="33%" align="left">
-<a href="#screenshot-10">◀ Previous</a>
-</td>
-<td width="34%" align="center">
-<a href="#screenshot-1">1</a> | <a href="#screenshot-2">2</a> | <a href="#screenshot-3">3</a> | <a href="#screenshot-4">4</a> | <a href="#screenshot-5">5</a> | <a href="#screenshot-6">6</a> | <a href="#screenshot-7">7</a> | <a href="#screenshot-8">8</a> | <a href="#screenshot-9">9</a> | <a href="#screenshot-10">10</a> | <b>11</b> | <a href="#screenshot-12">12</a> | <a href="#screenshot-13">13</a> | <a href="#screenshot-14">14</a> | <a href="#screenshot-15">15</a>
-</td>
-<td width="33%" align="right">
-<a href="#screenshot-12">▶ Next</a>
-</td>
-</tr>
-</table>
-
-</div>
-
----
-
-<div align="center" id="screenshot-12">
-
-### Screenshot 12 of 15: Shortcode Integration
-
-<img src="assets/img/screen12.png" alt="Shortcode Integration" width="100%"/>
-
-**Get your tour shortcode instantly** and embed it anywhere on your WordPress site.
-
-<br><br>
-
-<table align="center">
-<tr>
-<td width="33%" align="left">
-<a href="#screenshot-11">◀ Previous</a>
-</td>
-<td width="34%" align="center">
-<a href="#screenshot-1">1</a> | <a href="#screenshot-2">2</a> | <a href="#screenshot-3">3</a> | <a href="#screenshot-4">4</a> | <a href="#screenshot-5">5</a> | <a href="#screenshot-6">6</a> | <a href="#screenshot-7">7</a> | <a href="#screenshot-8">8</a> | <a href="#screenshot-9">9</a> | <a href="#screenshot-10">10</a> | <a href="#screenshot-11">11</a> | <b>12</b> | <a href="#screenshot-13">13</a> | <a href="#screenshot-14">14</a> | <a href="#screenshot-15">15</a>
-</td>
-<td width="33%" align="right">
-<a href="#screenshot-13">▶ Next</a>
-</td>
-</tr>
-</table>
-
-</div>
-
----
-
-<div align="center" id="screenshot-13">
-
-### Screenshot 13 of 15: Elementor Widget
-
-<img src="assets/img/screen13.png" alt="Elementor Widget" width="100%"/>
-
-**Drag and drop tours into any page** with built-in Elementor widget support.
-
-<br><br>
-
-<table align="center">
-<tr>
-<td width="33%" align="left">
-<a href="#screenshot-12">◀ Previous</a>
-</td>
-<td width="34%" align="center">
-<a href="#screenshot-1">1</a> | <a href="#screenshot-2">2</a> | <a href="#screenshot-3">3</a> | <a href="#screenshot-4">4</a> | <a href="#screenshot-5">5</a> | <a href="#screenshot-6">6</a> | <a href="#screenshot-7">7</a> | <a href="#screenshot-8">8</a> | <a href="#screenshot-9">9</a> | <a href="#screenshot-10">10</a> | <a href="#screenshot-11">11</a> | <a href="#screenshot-12">12</a> | <b>13</b> | <a href="#screenshot-14">14</a> | <a href="#screenshot-15">15</a>
-</td>
-<td width="33%" align="right">
-<a href="#screenshot-14">▶ Next</a>
-</td>
-</tr>
-</table>
-
-</div>
-
----
-
-<div align="center" id="screenshot-14">
-
-### Screenshot 14 of 15: Mobile Responsive View
-
-<img src="assets/img/screen14.png" alt="Mobile Responsive View" width="100%"/>
-
-**Fully responsive tours** that work beautifully on all devices.
-
-<br><br>
-
-<table align="center">
-<tr>
-<td width="33%" align="left">
-<a href="#screenshot-13">◀ Previous</a>
-</td>
-<td width="34%" align="center">
-<a href="#screenshot-1">1</a> | <a href="#screenshot-2">2</a> | <a href="#screenshot-3">3</a> | <a href="#screenshot-4">4</a> | <a href="#screenshot-5">5</a> | <a href="#screenshot-6">6</a> | <a href="#screenshot-7">7</a> | <a href="#screenshot-8">8</a> | <a href="#screenshot-9">9</a> | <a href="#screenshot-10">10</a> | <a href="#screenshot-11">11</a> | <a href="#screenshot-12">12</a> | <a href="#screenshot-13">13</a> | <b>14</b> | <a href="#screenshot-15">15</a>
-</td>
-<td width="33%" align="right">
-<a href="#screenshot-15">▶ Next</a>
-</td>
-</tr>
-</table>
-
-</div>
-
----
-
-<div align="center" id="screenshot-15">
-
-### Screenshot 15 of 15: Frontend Tour Display
-
-<img src="assets/img/screen15.png" alt="Frontend Tour Display" width="100%"/>
-
-**Immersive full-window virtual tours** that engage your visitors instantly.
-
-<br><br>
-
-<table align="center">
-<tr>
-<td width="33%" align="left">
-<a href="#screenshot-14">◀ Previous</a>
-</td>
-<td width="34%" align="center">
-<a href="#screenshot-1">1</a> | <a href="#screenshot-2">2</a> | <a href="#screenshot-3">3</a> | <a href="#screenshot-4">4</a> | <a href="#screenshot-5">5</a> | <a href="#screenshot-6">6</a> | <a href="#screenshot-7">7</a> | <a href="#screenshot-8">8</a> | <a href="#screenshot-9">9</a> | <a href="#screenshot-10">10</a> | <a href="#screenshot-11">11</a> | <a href="#screenshot-12">12</a> | <a href="#screenshot-13">13</a> | <a href="#screenshot-14">14</a> | <b>15</b>
-</td>
-<td width="33%" align="right"></td>
-</tr>
-</table>
-
-<br>
-
-**[⬆ Back to Top](#plugin-screenshots)**
-
-</div>
+</details>
 
 ---
 
@@ -770,7 +405,7 @@ Special thanks to:
 
 <div align="center">
 
-**[Website](https://webronic.com)** • **[Documentation](https://your-docs-link.com)** • **[Support](https://your-support-link.com)** • **[Pro Version](https://your-pro-link.com)**
+**[Website](https://webronic.com)** • **[Documentation](https://your-docs-link.com)** • **[Support](https://your-support-link.com)** • **[Pro Version](https://your-upgrade-link.com)**
 
 Made with 💙 by [Webronic](https://webronic.com)
 
