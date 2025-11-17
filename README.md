@@ -1,13 +1,19 @@
 # 🌐 Webronic 360 Tour - WordPress Virtual Tour Plugin
 
 <div align="center">
+
 ### Main Picture
+
 ![Main Picture](https://github.com/user-attachments/assets/317d7c32-7c75-4ad5-9553-80e8824f5bdc)
 
+*Create unlimited tours with an intuitive dashboard. Free users get 1 tour with 5 scenes and 5 hotspots to get started.*
 
 **Transform any location into an immersive 360° virtual experience**
 
-[Demo](https://your-demo-link.com) • [Documentation](https://your-docs-link.com) • [Support](https://your-support-link.com) • [Pro Version](https://your-pro-link.com)
+[Demo](https://your-demo-link.com) • 
+[Documentation](https://your-docs-link.com) • 
+[Support](https://your-support-link.com) • 
+[Pro Version](https://your-pro-link.com)
 
 </div>
 
