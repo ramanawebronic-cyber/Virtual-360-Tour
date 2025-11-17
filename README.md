@@ -185,7 +185,7 @@ Unlock the full potential of virtual tours:
 - 🌟 **Social Media Sharing** - One-click sharing to social platforms
 - 🌟 **Priority Support** - Get expert help when you need it
 
-[🎯 **Upgrade to Pro →**](https://your-upgrade-link.com)
+[🎯 **Upgrade to Pro →**](https://wplicense.webronics.com/checkout/?add-to-cart=189)
 
 ---
 
