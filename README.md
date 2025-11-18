@@ -63,7 +63,7 @@ Right-click anywhere on your panorama to place interactive hotspots. Share infor
 ## 📸 Screenshots
 
 <details>
-<summary><strong>🖼️ Click to view all screenshots (15 images)</strong></summary>
+<summary><strong>🖼️ Click to view all screenshots</strong></summary>
 
 ### Main Dashboard
 <img src="https://wpdemo.webronics.com/wp-content/uploads/2025/11/Screenshot-2025-11-17-182059.png" width="1908" height="882" alt="Main Dashboard">
