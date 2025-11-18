@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Main Picture](https://github.com/user-attachments/assets/317d7c32-7c75-4ad5-9553-80e8824f5bdc)
+![Main Picture](https://wpdemo.webronics.com/wp-content/uploads/2025/11/360-main.png)
 
 **Transform any location into an immersive 360° virtual experience**
 
