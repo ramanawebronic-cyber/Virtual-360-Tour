@@ -65,7 +65,7 @@ Right-click anywhere on your panorama to place interactive hotspots. Share infor
 <summary><strong>🖼️ Click to view all screenshots (15 images)</strong></summary>
 
 ### Main Dashboard
-<img src="https://wpdemo.webronics.com/wp-content/uploads/2025/11/Screenshot-2025-11-17-183028-300x144.png" width="1908" height="882" alt="Main Dashboard">
+<img src="https://wpdemo.webronics.com/wp-content/uploads/2025/11/Screenshot-2025-11-17-182059.png width="1908" height="882" alt="Main Dashboard">
 *Create unlimited tours with an intuitive dashboard. Free users get 1 tour with 5 scenes and 5 hotspots to get started.*
 
 ### Tour Creation Interface
